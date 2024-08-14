@@ -1,0 +1,56 @@
+# ROSEPRIME Alacritty Colors
+# Default colors
+[colors.primary]
+background = '#121212'
+foreground = '#bbbac1'
+
+#[colors.cursor]
+#cursor = '#bbbac1'
+#text = '#121212'
+
+# Normal colors
+[colors.normal]
+black = '#111111'
+red = '#ba7685'
+green = '#6b8f89'
+yellow = '#d2af98'
+blue = '#8192C7'
+magenta = '#9879b0'
+cyan = '#a3849b'
+white = '#bbbac1'
+
+# Bright colors
+[colors.bright]
+black = '#555555'
+red = '#ba7685'
+green = '#6b8f89'
+yellow = '#d2af98'
+blue = '#8192C7'
+magenta = '#ddadb4'
+cyan = '#a3849b'
+white = '#bbbac1'
+
+# Indexed Colors
+[[colors.indexed_colors]]
+index = 16
+color = '#a3b8b5'
+
+[[colors.indexed_colors]]
+index = 17
+color = '#bbbac1'
+
+[env]
+TERM = "xterm-256color"
+
+# [colors.primary]
+# background = '#0C0B00'
+
+[window]
+padding.x = 15
+padding. y = 15
+
+[font]
+size = 24
+
+[font.normal]
+family = "MesloLGS Nerd Font Mono"
