@@ -3,6 +3,7 @@ return {
 	"cdmill/neomodern.nvim",
 	-- "rebelot/kanagawa.nvim",
 	lazy = false,
+	commit = "415009ee6b7652cbd5d5eff4d9cb344f03d4d85f",
 	priority = 1000,
 	config = function()
 		local transparent = true
@@ -37,6 +38,6 @@ return {
 		-- })
 		require("neomodern").load()
 		-- setup must be called before loading
-		-- vim.cmd("colorscheme kanagawa-dragon")
+		-- vim.cmd.colorscheme("neomodern")
 	end,
 }
