@@ -1,1 +1,4 @@
-require("config.lazy")
+require("koge.lazy")
+require("koge.core")
+
+

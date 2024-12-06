@@ -3,7 +3,6 @@ return {
     dependencies = "nvim-tree/nvim-web-devicons",
     config = function()
         require("nvim-tree").setup({
-            view = {side = "right", width = 35, relativenumber = true},
             diagnostics = {enable = true},
             renderer = {
                 icons = {
