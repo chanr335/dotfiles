@@ -12,10 +12,10 @@ success_symbol = '[陳](bold green)' # The 'success_symbol' segment is being set
 [package]
 disabled = true
 
-# Time module configuration
-[time]
-format = "[$time]($style)"
-style = "bold yellow"
-time_format = "%H:%M:%S "
-disabled = false
+# # Time module configuration
+# [time]
+# format = "[$time]($style)"
+# style = "bold yellow"
+# time_format = "%H:%M:%S "
+# disabled = false
 
