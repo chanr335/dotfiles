@@ -15,6 +15,6 @@ family = "MesloLGS Nerd Font Mono"
 startup_mode = "Maximized"
 
 decorations = "None"
-padding = { x = 15, y = 15}
+padding = { x = 8, y = 8}
 
 
