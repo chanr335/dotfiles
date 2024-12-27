@@ -34,4 +34,8 @@ return{
       desc = "Quickfix List (Trouble)",
     },
   },
+    -- Removes the signs on the left margin
+    vim.diagnostic.config({
+        signs = false
+    }),
 }
