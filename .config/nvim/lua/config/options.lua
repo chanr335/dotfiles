@@ -7,8 +7,7 @@ vim.opt.clipboard:append("unnamedplus")
 vim.opt.expandtab = true
 vim.opt.number = true
 vim.opt.relativenumber = true
--- Relative line numbers
--- vim.opt.statuscolumn = "%s %l %r "
+vim.opt.cursorline = true
 
 vim.opt.laststatus = 3
 vim.opt.cmdheight = 0
@@ -18,4 +17,4 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 
 vim.opt.wrap = false
-vim.opt.hidden = true
+vim.opt.hidden = false

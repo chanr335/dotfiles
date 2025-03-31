@@ -10,7 +10,7 @@ return {
 						file = false,
 						folder = false,
 						folder_arrow = true,
-						git = false,
+						git = true,
 						modified = true,
 						hidden = false,
 						diagnostics = false,
