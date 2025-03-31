@@ -35,9 +35,11 @@ return {
 		-- 	})
 		--
 			vim.cmd("colorscheme melange")
+
             vim.api.nvim_set_hl(0, "Normal", { bg = "#181616" })
             vim.api.nvim_set_hl(0, "NormalNC", { bg = "#181616" })
             vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "#181616" })
+            -- vim.api.nvim_set_hl(0, "Comment", { fg = "#747474" })
         end
     },
 }

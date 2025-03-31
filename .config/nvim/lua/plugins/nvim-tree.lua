@@ -7,7 +7,7 @@ return {
 			renderer = {
 				icons = {
 					show = {
-						file = false,
+						file = true,
 						folder = false,
 						folder_arrow = true,
 						git = true,

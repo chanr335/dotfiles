@@ -3,7 +3,6 @@
 import = [
 # "~/.config/alacritty/kanagawa.toml"
 "~/.config/alacritty/melange.toml"
-
 ]
 
 [font]
@@ -11,8 +10,8 @@ size = 24.0
 
 [font.normal]
 # family = "MesloLGS Nerd Font Mono"
-# family = "UbuntuMono Nerd Font"
-family = "FiraCode Nerd Font"
+family = "FiraCode Nerd Font Mono"
+# family = "Iosevka Nerd Font"
 
 
 
