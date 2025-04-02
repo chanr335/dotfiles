@@ -1,7 +1,7 @@
 theme = Melange_dark
 background = 181616
 
-font-size = 26 
+font-size = 23 
 font-family = "FiraCode Nerd Font Mono"
 
 maximize = true
