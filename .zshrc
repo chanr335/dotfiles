@@ -41,7 +41,9 @@ alias cd="z"
 source <(fzf --zsh)
 
 export PATH=$PATH:$(go env GOPATH)/bin
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_222`
+# export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_222`
+export JAVA_HOME=`/usr/libexec/java_home -v 21.0.2`
+# export PATH="$JAVA_HOME/bin:$PATH"
 
 alias ghidra='/opt/homebrew/Caskroom/ghidra/11.3-20250205/ghidra_11.3_PUBLIC/ghidraRun'
 alias zookeeper='zookeeper-server-start /opt/homebrew/etc/zookeeper/zoo.cfg'
