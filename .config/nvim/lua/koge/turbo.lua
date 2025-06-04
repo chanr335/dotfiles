@@ -1,8 +1,11 @@
 local M = {}
 
 local function play_sound()
-    local sound_path = vim.fn.expand("~") .. "/dotfiles/.config/nvim/lua/koge/sounds/turbo.wav"
-    local cmd = string.format("mpv --no-video --no-terminal %s &", sound_path)
+    local sound_path = {
+        vim.fn.expand("~") .. "/dotfiles/.config/nvim/lua/koge/sounds/turbo.wav",
+        -- vim.fn.expand("~") .. "/dotfiles/.config/nvim/lua/koge/sounds/test.wav",
+    }
+    local cmd = string.format("mpv --no-video --no-terminal %s &", sound_path[math.random(#sound_path)])
     os.execute(cmd)
 end
 

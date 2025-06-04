@@ -2,7 +2,7 @@ theme = Melange_dark
 background = 181616
 
 font-size = 23 
-font-family = "FiraCode Nerd Font Mono"
+font-family = "MesloLGL Nerd Font"
 
 maximize = true
 window-decoration = false

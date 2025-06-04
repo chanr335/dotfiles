@@ -4,7 +4,7 @@ return {
     config = function()
         require("mason").setup()
         require("mason-lspconfig").setup({ ensure_installed = {
-            "ts_ls", "html", "cssls", "tailwindcss", "lua_ls", "gopls", "clangd", "rust_analyzer"
+            "ts_ls", "html", "cssls", "tailwindcss", "lua_ls", "clangd", "rust_analyzer"
         }})
     end,
 }
