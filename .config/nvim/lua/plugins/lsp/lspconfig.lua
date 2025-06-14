@@ -7,6 +7,36 @@ return {
         {"folke/lazydev.nvim", config = true},
     },
     config = function()
+        local lspconfig = require("lspconfig")
+        local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
+        lspconfig = require('lspconfig')
+            lspconfig.sourcekit.setup({
+                capabilities = {
+                    workspace = {
+                        didChangeWatchedFiles = {
+                        dynamicRegistration = true,
+                    },
+                },
+            },
+        })
+
+        local servers = {
+            "ts_ls",
+            "html",
+            "cssls",
+            "tailwindcss",
+            "lua_ls",
+            "clangd",
+            "rust_analyzer",
+        }
+
+        for _, server in ipairs(servers) do
+                lspconfig[server].setup({
+                    capabilities = capabilities,
+                })
+            end
+
         vim.api.nvim_create_autocmd("LspAttach", {
             group = vim.api.nvim_create_augroup("UserLspConfig", {}),
             callback = function(ev)
@@ -48,13 +78,6 @@ return {
                 })
                 vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", {
                     buffer = ev.buf, silent = true, desc = "Restart LSP"
-                })
-            end,
-        })
-        require("mason-lspconfig").setup_handlers({
-            function(server_name)
-                require("lspconfig")[server_name].setup({
-                    capabilities = require("cmp_nvim_lsp").default_capabilities(),
                 })
             end,
         })
