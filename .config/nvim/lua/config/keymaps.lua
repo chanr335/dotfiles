@@ -1,10 +1,11 @@
-local keymap = vim.keymap -- for conciseness
-
 -- vim.keymap.set('n', '<leader>w', ':w<CR>', { noremap = true, silent = true })
---
--- --bufferline move between tabs
--- vim.keymap.set("n", "H", ":BufferLineCyclePrev<CR>", { noremap = true, silent = true })
--- vim.keymap.set("n", "L", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
---
 -- vim.keymap.set("n", "<leader>q", ":bdelete<CR>", { noremap = true, silent = true })
 
+vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
+vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
+
+vim.keymap.set("v", "p", '"_dp')
+vim.keymap.set("v", "P", '"_dP')
+
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
