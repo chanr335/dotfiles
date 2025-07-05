@@ -1,8 +1,9 @@
 theme = Melange_dark
-background = 181616
+# background = 181616
+background = 000000 
 
 font-size = 23 
-font-family = "MesloLGL Nerd Font"
+font-family = "IosevkaTerm Nerd Font"
 
 maximize = true
 window-decoration = false
@@ -13,3 +14,4 @@ confirm-close-surface = false
 
 mouse-hide-while-typing = true
 
+custom-shader = shaders/cursor_smear.glsl
