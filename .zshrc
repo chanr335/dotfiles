@@ -45,6 +45,15 @@ export PATH=$PATH:$(go env GOPATH)/bin
 export JAVA_HOME=`/usr/libexec/java_home -v 21.0.2`
 # export PATH="$JAVA_HOME/bin:$PATH"
 
+export EDITOR="nvim"
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
 alias ghidra='/opt/homebrew/Caskroom/ghidra/11.3-20250205/ghidra_11.3_PUBLIC/ghidraRun'
 alias zookeeper='zookeeper-server-start /opt/homebrew/etc/zookeeper/zoo.cfg'
 alias kafka='kafka-server-start /opt/homebrew/etc/kafka/server.properties'
