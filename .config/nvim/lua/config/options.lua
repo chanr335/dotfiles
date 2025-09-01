@@ -6,7 +6,7 @@ vim.opt.smartindent = true
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.expandtab = true
 vim.opt.number = true
-vim.opt.relativenumber = true
+-- vim.opt.relativenumber = true
 vim.opt.cursorline = true
 
 vim.opt.laststatus = 3

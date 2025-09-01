@@ -1,9 +1,11 @@
 theme = Melange_dark
-# background = 181616
+# background = 212121 
 background = 000000 
 
 font-size = 23 
 font-family = "IosevkaTerm Nerd Font"
+font-feature = -calt
+font-feature = -dlig
 
 maximize = true
 window-decoration = false
