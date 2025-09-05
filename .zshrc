@@ -58,6 +58,8 @@ alias ghidra='/opt/homebrew/Caskroom/ghidra/11.3-20250205/ghidra_11.3_PUBLIC/ghi
 alias zookeeper='zookeeper-server-start /opt/homebrew/etc/zookeeper/zoo.cfg'
 alias kafka='kafka-server-start /opt/homebrew/etc/kafka/server.properties'
 
+export MANPAGER="nvim +Man!"
+
 
 
 

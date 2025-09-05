@@ -17,3 +17,10 @@ confirm-close-surface = false
 mouse-hide-while-typing = true
 
 custom-shader = shaders/cursor_smear.glsl
+
+palette = 1=#C53030
+# palette = 2=#4A8B8B
+# palette = 3=#3A6E6E
+palette = 2=#A84848
+palette = 3=#7A2E2E
+palette = 4=#949494

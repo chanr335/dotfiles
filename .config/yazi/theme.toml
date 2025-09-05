@@ -1,3 +1,7 @@
 [flavor]
 light = "ashen"
 dark = "ashen"
+
+[status]
+sep_left= {open = "█", close = ""}
+sep_right= {open = "", close = "█"}

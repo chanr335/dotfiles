@@ -18,4 +18,3 @@ vim.opt.shiftwidth = 4
 
 vim.opt.wrap = true
 vim.opt.hidden = true
-
