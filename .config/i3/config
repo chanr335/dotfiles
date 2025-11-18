@@ -144,7 +144,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -175,7 +175,7 @@ set $bgcolor    #828282
 set $in-bgcolor #363636
 set $text       #ffffff
 set $u-bgcolor  #4A8B8B
-set $indicator  #D87C4A
+set $indicator  #828282
 set $in-text    #969696
 
 # Start i3bar to display a workspace bar (plus the system information i3status

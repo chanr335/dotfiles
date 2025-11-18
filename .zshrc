@@ -68,3 +68,17 @@ if [[ "$OS_TYPE" == "Darwin" ]]; then
     alias zookeeper='zookeeper-server-start /opt/homebrew/etc/zookeeper/zoo.cfg'
     alias kafka='kafka-server-start /opt/homebrew/etc/kafka/server.properties'
 fi
+
+# terminal setting ghostty/kitty -> xterm-256color
+has_terminfo() {
+    # returns 0 if terminal type is installed
+    infocmp "$1" >/dev/null 2>&1
+}
+ORIG_TERM="$TERM"
+if ! has_terminfo "$TERM"; then # downgrade
+    export TERM="xterm-256color"
+fi
+
+if [[ -o login ]]; then
+    [[ -f /etc/motd ]] && cat /etc/motd
+fi
