@@ -62,6 +62,12 @@ function y() {
     rm -f -- "$tmp"
 }
 
+# linux aliases
+if [[ "$OS_TYPE" == "Linux" ]]; then
+    alias subaru='bash ~/subaru.sh'
+    alias honda='bash ~/honda.sh'
+fi
+
 # macOS aliases
 if [[ "$OS_TYPE" == "Darwin" ]]; then
     alias ghidra='/opt/homebrew/Caskroom/ghidra/11.3-20250205/ghidra_11.3_PUBLIC/ghidraRun'

@@ -1,9 +1,6 @@
 require("config.options")
 require("config.keymaps")
 require("config.lazy")
-require("koge.todo").setup({
-    target_file = "~/todo.md"
-})
 
 local notify = vim.notify
 vim.notify = function(msg, ...)
