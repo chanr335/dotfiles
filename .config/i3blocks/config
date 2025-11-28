@@ -18,6 +18,11 @@ label=󱤐
 # label=󰕾 
 
 [time]
-command=date "+%Y-%m-%d %H:%M:%S "
+command=date "+%Y-%m-%d %H:%M:%S"
 interval=1
 color=#b14242
+
+[shutdown_menu]
+full_text= 
+command=./shutdown_menu
+

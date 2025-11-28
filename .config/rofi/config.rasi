@@ -11,7 +11,8 @@
 }
 
 * {
-    font:   "Roboto 12";
+    // font:   "Roboto 12";
+    font:   "IosevkaTerm Nerd Font 12";
 
     background-color:   transparent;
     text-color:         @fg0;
